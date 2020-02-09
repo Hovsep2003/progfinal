@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        div {
+            display: inline-block;
+        }
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում II Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Կասամանյան Հովսեփ</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 10 ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը, կամ այրում է
+                    կրակը, կամ նրան կոխկրտում է գիշատիչը</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Դեղինը խոտակերն է, որը բազմանում է 6 հատ խոտ ուտելուց հետո և մահանում է 30 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը, կամ երբ խեղդվում է ջրում, կամ երբ նրան այրում է կրակը:</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչն է, որը բազմանում է 6 հատ խոտակեր ուտելուց հետո և մահանում է 30 հատ չուտելուց հետո, կամ
+                    երբ խեղդվում է ջրում, կամ երբ նրան այրում է կրակը:</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>կապույտը ջուրն է, որը բազմանում է 10 ցիկլը մեկ և այն չի մահանում:</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>նարնջագույնը կրակն է, որը բազմանում է 10 ցիկլը մեկ, այն այրում է այն ամենը, ինչի վրա կանգնում է և մահանում է, երբ նրան մարում է ջուրը կամ չի հասցնում ինչ որ բան այրել:</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="boom()">Explode</button>
+    <button onclick="restartgame()">Restart</button>
+</body>
+
+</html>
