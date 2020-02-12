@@ -54,8 +54,8 @@ function boom(){
     
     socket.emit("boom");
 }
-function restartgame(){
+function multi(){
     console.log("tt");
     
-    socket.emit("noric");
+    socket.emit("bazmanal");
 }                           
